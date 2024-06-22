@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emoralesExamen.Views.vResumen"
+             Title="vResumen">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label x:Name="lblNombre"
+        HorizontalTextAlignment="End"
+        FontSize="20"
+        TextColor="Red"/>
+        <Label 
+        Text="RESUMEN"
+        TextColor="Red"
+        FontSize="20"
+         HorizontalOptions="Center" />
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="NOMBRE"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="0"
+Grid.Column="0"/>
+            <Entry x:Name="lblnombre"
+                   HorizontalOptions="Center"
+Grid.Row="0"
+Grid.Column="1"/>
+            <Label Text="APELLIDO"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="1"
+Grid.Column="0"/>
+            <Entry x:Name="lblapellido"
+HorizontalOptions="Center"
+Grid.Row="1"
+Grid.Column="1"/>
+            <Label Text="EDAD"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="2"
+Grid.Column="0"/>
+            <Entry x:Name="lbledad"
+HorizontalOptions="Center"
+Grid.Row="2"
+Grid.Column="1"/>
+            <Label Text="FECHA"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="3"
+Grid.Column="0"/>
+            <Entry x:Name="lblfecha"
+HorizontalOptions="Center"
+Grid.Row="3"
+Grid.Column="1"/>
+            <Label Text="CIUDAD"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="4"
+Grid.Column="0"/>
+            <Entry x:Name="lblciudad"
+HorizontalOptions="Center"
+Grid.Row="4"
+Grid.Column="1"/>
+            <Label Text="PAIS"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="5"
+Grid.Column="0"/>
+            <Entry x:Name="lblpais"
+HorizontalOptions="Center"
+Grid.Row="5"
+Grid.Column="1"/>
+            <Label Text="MONTO INICIAL"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="6"
+Grid.Column="0"/>
+            <Entry x:Name="lblmonto"
+HorizontalOptions="Center"
+Grid.Row="6"
+Grid.Column="1"/>
+            <Label Text="PAGO MENSUAL"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="7"
+Grid.Column="0"/>
+            <Entry x:Name="lblpagomensual"
+HorizontalOptions="Center"
+Grid.Row="7"
+Grid.Column="1"/>
+            <Label Text="PAGO TOTAL"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="8"
+Grid.Column="0"/>
+            <Entry x:Name="lblpagototal"
+HorizontalOptions="Center"
+Grid.Row="8"
+Grid.Column="1"/>
+        </Grid>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

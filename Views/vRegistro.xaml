@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emoralesExamen.Views.vRegistro"
+             Title="vRegistro">
+    <ScrollView>
+    <VerticalStackLayout
+         Spacing="20"
+            Padding="20">
+        <Label x:Name="lblNombre"
+                HorizontalTextAlignment="End"
+                FontSize="20"
+                TextColor="Red"/>
+        <Label 
+                Text="REGISTRO"
+                TextColor="Red"
+                FontSize="20"
+                 HorizontalOptions="Center" />
+            <Grid RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="FECHA"
+                 HorizontalOptions="End"
+                 VerticalOptions="Center"
+                 FontSize="18"
+                 Grid.Row="0"
+                 Grid.Column="0"/>
+                <DatePicker x:Name="dpFecha" Format="dd/mm/yyyy"
+                 TextColor="Red"
+                  HorizontalOptions="Start"
+                 Grid.Row="0"
+                Grid.Column="1"/>
+                <Label Text="PAIS"
+     HorizontalOptions="End"
+     VerticalOptions="Center"
+     FontSize="18"
+     Grid.Row="1"
+     Grid.Column="0"/>
+                <Picker x:Name="pkPais"
+         Grid.Row="1"
+         Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Guatemala</x:String>
+                        <x:String>Mexico</x:String>
+                        <x:String>EEUU</x:String>
+                        <x:String>Colombia</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="CIUDAD"
+HorizontalOptions="End"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="2"
+Grid.Column="0"/>
+                <Picker x:Name="pkCiudad"
+    Grid.Row="2"
+    Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Quito</x:String>
+                        <x:String>Guatemala</x:String>
+                        <x:String>Guadalajara</x:String>
+                        <x:String>Miami</x:String>
+                        <x:String>Bogota</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="MONTO INICIAL"
+    HorizontalOptions="End"
+    VerticalOptions="Center"
+    FontSize="18"
+    Grid.Row="3"
+    Grid.Column="0"/>
+                <Entry x:Name="txtMonto"
+    Placeholder="Ingrese el monto inicial"
+    Grid.Row="3"
+    Grid.Column="1"/>
+            </Grid>
+
+            <Label Text="----------------------------------------------------------------------------------------------------------------------------------------"/>
+            <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="NOMBRE"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="0"
+Grid.Column="0"/>
+            <Entry x:Name="txtnombre"
+Placeholder="Ingrese el nombre"
+Grid.Row="1"
+Grid.Column="0"/>
+            <Label Text="APELLIDO"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="0"
+Grid.Column="1"/>
+            <Entry x:Name="txtapellido"
+Placeholder="Ingrese el apellido"
+Grid.Row="1"
+Grid.Column="1"/>
+            <Label Text="EDAD"
+HorizontalOptions="Center"
+VerticalOptions="Center"
+FontSize="18"
+Grid.Row="0"
+Grid.Column="2"/>
+            <Entry x:Name="txtedad"
+Placeholder="Ingrese la edad"
+Grid.Row="1"
+Grid.Column="2"/>
+
+        </Grid>
+        <Button x:Name="btnResumen"
+        Text ="VER RESUMEN"
+        Clicked="btnResumen_Clicked"/>
+    </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>
